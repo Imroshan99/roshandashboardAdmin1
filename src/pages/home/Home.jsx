@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Featured from '../../components/featured/Featured';
 import Chart from '../../components/chart/Chart';
 import "./Home.scss"
+import Table from '../../components/Table/Table';
 const Home = () => {
   return (
     <div className='home'>
@@ -23,8 +24,9 @@ const Home = () => {
         </div>
         <div className="listcontainer">
           <div className="listtitle">
-            list container
+            Letest Transections
           </div>
+          <Table/>
         </div>
         </div>
     </div>
