@@ -2,4 +2,15 @@
     display: flex;
     flex: 3;
     padding-left: 1.5rem;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.26);
+        border-radius: 2rem;
+        .title{
+            background-color: #eee8e8;
+            .title6month{
+                font-size: large;
+            }
+        }
+   
 }

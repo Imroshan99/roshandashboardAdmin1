@@ -1,5 +1,5 @@
 import "./Featured.scss";
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
@@ -22,6 +22,27 @@ const Featured = () => {
                         </p>
                         <p className="texts">Priviour transection processing. Last payment may not be included
                         </p>
+                </div>
+                <div className="target">
+                        <div className="target1">
+                                <span>Target</span>
+                                <span  className="targetcol positive">
+                                        <KeyboardArrowDownOutlinedIcon/>9.21k
+                                </span>
+                        </div>
+                        <div className="target1">
+                                <span>Last Week</span>
+                                <span className="targetcol negetive">
+                                <KeyboardArrowDownOutlinedIcon/>12.5k
+                                </span>
+                        </div>
+                        <div className="target1">
+                                <span>Last Month</span>
+                                <span className="targetcol positive">
+                                <KeyboardArrowDownOutlinedIcon/>$12.6k
+                                </span>
+                        </div>
+
                 </div>
         </div>
     </div>
