@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="right-navbar">
         <div className="lang">
           <LanguageIcon className="icon"/>
-          English
+          Englishs
         </div>
         <div className="mode">
           <NightsStayOutlinedIcon className="icon"/>
