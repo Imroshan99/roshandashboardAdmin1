@@ -1,0 +1,54 @@
+.main-new{
+    // background-color: red;
+    .add-new-user{
+        background-color: aliceblue;
+            box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+            -webkit-box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+            -moz-box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+            border-radius: 2rem;
+            font-weight: bold;
+           .news{
+                margin: 0 auto;
+                text-align: center;
+           }
+    }
+    .form-div{
+
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+        -moz-box-shadow: 7px 14px 10px -1px rgba(0,0,0,0.8);
+        margin-top: 4rem;
+        border-radius: 3rem;
+        .imgform{
+            // flex: 1;
+            width: 3rem;
+            border-radius: 1rem;
+            
+            img{
+                border-radius: 2rem;
+                padding-left: 1rem;
+            }
+        }
+        .formsepdiv1{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            // flex: 5;
+            .btn-form{
+                margin-top: 1rem;
+            }
+        }
+        .formsepdiv2{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            // flex: 2;
+        }
+    }
+}
+.middleform{
+    display: flex;
+    flex-direction: column;
+}

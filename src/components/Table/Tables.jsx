@@ -38,7 +38,7 @@ const Tables = () => {
             date:"15 March",
             amount:875,
             method:"Online",
-            status:"Approved"
+            status:"Rejected"
         },
 
     ]
@@ -57,19 +57,23 @@ const Tables = () => {
             <TableRow
               key={row.id}
             >
-              <TableCell >
+              <TableCell className='tableCells'>
                 {row.id}
               </TableCell>
-              <TableCell>
+              <TableCell className='tableCells'>
                   <div className="wrapper">
                     <img src={row.img} alt="imgg" className="image" />{row.product}
                   </div>
                 </TableCell>
-              <TableCell>{row.customer}</TableCell>
-              <TableCell>{row.date}</TableCell>
-              <TableCell>₹{row.amount}</TableCell>
-              <TableCell>{row.method}</TableCell>
-              <TableCell>{row.status}</TableCell>
+              <TableCell className='tableCells'>{row.customer}</TableCell>
+              <TableCell className='tableCells'>{row.date}</TableCell>
+              <TableCell className='tableCells'>₹{row.amount}</TableCell>
+              <TableCell className='tableCells'>{row.method}</TableCell>
+              <TableCell className='tableCells'>
+                <span className={`status ${row.status}`}>
+                  {row.status}
+                </span>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

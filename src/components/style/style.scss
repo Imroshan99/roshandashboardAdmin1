@@ -1,0 +1,16 @@
+.App.dark{
+    background-color: black;
+    .sidebar{
+        background-color: black;
+        color: white;
+    }
+    .table{
+        background-color: black;
+        .tableCell{
+            color: white;
+        }
+        .tableCells{
+            color: white;
+        }
+    }
+}

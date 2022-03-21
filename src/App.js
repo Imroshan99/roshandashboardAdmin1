@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { productData, userData } from "./components/formData/FormData";
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
-
+import "./components/style/style.scss";
 function App() {
   return (
-        <div className="App" >
+        <div className="App dark" >
             <BrowserRouter>
               <Routes>
                 <Route path="/" >
@@ -17,12 +18,12 @@ function App() {
                   <Route path="users" >
                       <Route index element={<List/>}/>
                       <Route path=":userId" element={<Single/>}/>
-                      <Route path="new" element={<New/>}/>
+                      <Route path="new" element={<New inputs={userData} title="Add New User"/>}/>
                   </Route>
                   <Route path="product" >
                     <Route index element={<List/>}/>
                     <Route path=":productId" element={<Single/>}/>
-                    <Route path="new" element={<Single/>}/>
+                    <Route path="new" element={<New inputs={productData} title="Add New Product"/>}/>
                   </Route>
                 </Route>
               </Routes>
