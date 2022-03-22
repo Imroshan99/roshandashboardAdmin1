@@ -7,9 +7,13 @@ import Login from "./pages/login/Login";
 import New from "./pages/new/New";
 import Single from "./pages/single/Single";
 import "./components/style/style.scss";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 function App() {
+  const {darkMode}=useContext(DarkModeContext)
+  console.log("dark mode",darkMode)
   return (
-        <div className="App dark" >
+        <div className={darkMode? "App dark":"App"} >
             <BrowserRouter>
               <Routes>
                 <Route path="/" >

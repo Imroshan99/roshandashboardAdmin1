@@ -6,7 +6,10 @@ import NightsStayOutlinedIcon from '@mui/icons-material/NightsStayOutlined';
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import AssignmentIndOutlinedIcon from '@mui/icons-material/AssignmentIndOutlined';
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/darkModeContext";
 const Navbar = () => {
+  const {dispatch}=useContext(DarkModeContext);
   return (
     <div className="navbar">
       <div className="input-box">
@@ -18,11 +21,11 @@ const Navbar = () => {
           <LanguageIcon className="icon"/>
           English
         </div>
-        <div className="mode">
-          <NightsStayOutlinedIcon className="icon"/>
+        <div className="mode" >
+          <NightsStayOutlinedIcon className="icon" onClick={()=>dispatch({type:"Toggle"})}  />
         </div>
         <div className="notfi">
-          <NotificationsActiveOutlinedIcon className="icon"/>
+          <NotificationsActiveOutlinedIcon className="icon"  />
           <div className="notify-icon">1</div>
         </div>
         <div className="chat-icon">
