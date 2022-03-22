@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const New = (props) => {
   const [file,setFile]=useState("")
-  console.log("ffffile",file)
+  // console.log("ffffile",file)
   const alldata=props.inputs
   return (
     <div className="new">
@@ -43,10 +43,10 @@ const New = (props) => {
                   <Button type="submit" className="btn-form" style={{color:"#019267"}} variant="outlined" >Submit</Button>
                 </div>
                 <div className="formsepdiv2">
-                <TextField id="filled-basic" type="text" label="Username" variant="filled" />
-                <TextField id="filled-basic" type="email" label="Email" variant="filled" />
-                <TextField id="filled-basic" type="password" label="Password" variant="filled" />
-                <TextField id="filled-basic" label="Country" variant="filled" />
+                <TextField id="filled-basica" type="text" label="Username" variant="filled" />
+                <TextField id="filled-basicb" type="email" label="Email" variant="filled" />
+                <TextField id="filled-basicc" type="password" label="Password" variant="filled" />
+                <TextField id="filled-basicd" label="Country" variant="filled" />
                 </div>
             </div>
           </div>

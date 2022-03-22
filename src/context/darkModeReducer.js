@@ -5,23 +5,19 @@ export const DarkModeReducer=(state,action)=>{
                 darkMode:false
             }
         }          
-            break;
         case "Dark":{
             return{
                 darkMode:true
             }
         }          
-            break;
         case "Toggle":{
             return{
                 darkMode:!state.darkMode
             }
         }          
-            break;
     
         default:{
             return state
         }
-            break;
     }
 }

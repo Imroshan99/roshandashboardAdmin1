@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const DataTable = () => {
   return (
     <div className='datatable'>
-        <table class="table table-striped">
+        <table className="table table-striped">
   <thead>
     <tr>
       <th scope="col">Id</th>

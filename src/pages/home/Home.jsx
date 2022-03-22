@@ -5,9 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Featured from '../../components/featured/Featured';
 import Chart from '../../components/chart/Chart';
 import "./Home.scss"
-// import Table from '../../components/Table/Table';
 import Tables from '../../components/Table/Tables';
-import Footer from '../../components/footer/Footer';
 const Home = () => {
   return (
     <div>

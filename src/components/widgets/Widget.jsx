@@ -5,7 +5,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 const Widget = ({type}) => {
-    console.log(type,"type")
+    // console.log(type,"type")
     let data;
     let amount=1000;
     let diff=25;
