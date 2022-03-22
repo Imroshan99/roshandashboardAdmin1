@@ -7,8 +7,10 @@ import Chart from '../../components/chart/Chart';
 import "./Home.scss"
 // import Table from '../../components/Table/Table';
 import Tables from '../../components/Table/Tables';
+import Footer from '../../components/footer/Footer';
 const Home = () => {
   return (
+    <div>
     <div className='home'>
         <Sidebar/>
         <div className="homecontainer">
@@ -30,6 +32,9 @@ const Home = () => {
           <Tables/>
         </div>
         </div>
+    </div>
+    {/* <Footer/> */}
+
     </div>
   )
 }
