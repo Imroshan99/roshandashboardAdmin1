@@ -8,7 +8,6 @@ import { useState } from "react";
 
 const New = (props) => {
   const [file,setFile]=useState("")
-  // console.log("ffffile",file)
   const alldata=props.inputs
   return (
     <div className="new">
