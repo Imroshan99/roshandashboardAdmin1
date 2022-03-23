@@ -36,7 +36,7 @@ const Tables = () => {
             img:"https://m.media-amazon.com/images/I/61sFL3mYDPL._SY450_.jpg",
             customer:"Sakshi Wankhede",
             date:"15 March",
-            amount:875,
+            amount:799,
             method:"Online",
             status:"Rejected"
         },
